@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Martin Diaz | Currículum Vitae</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <meta name="description" content="Currículum Vitae de Martin Diaz" />
+        <meta name="keywords" content="Currículum Vitae y para que mas :)" />
+        <meta name="robots" content="noindex, nofollow" />
+        
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="expires" content="-1" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="js/handlebars-v3.0.0.js"></script>
+        <script src="js/js.js"></script>
+
+        <script id="skillsListado" type="text/x-handlebars-template">
+            {{#each skills}}
+            <div class="progress {{clase}} active">
+              <div class="bar" style="width: {{cuantose}}%;">{{skill}}</div>
+            </div>
+            {{/each}}
+        </script>
+ 
+    </head>
+
+    <body>
+
+        <header>
+            <div>
+                <img src="foto-perfil.jpg" alt="Martin Diaz"/>
+                <p>
+					Hola!, mi nombre es Martin Diaz, tengo 33 años y soy de Cordoba Capital, me dedico al desarrollo Web en Front-End.
+					<br />Arme y armo sitios Web principalmente sobre LAMP.
+					<br />Actualmente trabajo sobre JavaScript en proyectos Front-End.
+					<br />Trato de estar enfocado a todo lo relacionado a la UI/UX de una aplicación o sitio Web.
+				</p>
+            </div>
+            <h1>Curriculum <span>VITAE</span></h1>
+        </header>
+
+        <section>
+            <h2>Skills :)</h2>
+            <div id="skillsconHandlebars"></div>
+        </section>
+
+        <section>
+            <article>
+                <h2>¿Que puedo hacer?</h2>
+                <p>
+Soy desarrollador Web, no diseño bien aunque puedo maquetar cualquier cosa a cualquier sistema de plantilla o lenguaje de marcas, he trabajado y conozco de metodologías agiles, versionado con GIT, sistemas de integración continua, jira, Responsive Web design, cross browser, frameworks css, etc.
+<br />
+Como Lider Tecnico gestione el proyecto implementando integracion continua, protocolos de code review, upgrade de sistemas de versionado de SVN a GIT, maneje un equipo compuesto por DEVs, QC, QC Automations y Business Analyst.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Educación :-|</h2>
+            <article>
+                <p>Secundario completo!, ingrese a la UTN en 2001 y abandone en 2003 :)</p>
+                <p>Ingles (Pre-Intermediate) leo o entiendo bien, escribo con ayuda y lo hablo pésimo :)</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Relaciones laborales anteriores</h2>
+            <article>
+                <span>Agosto 2011 - Actualidad</span>
+                <h3>Web UI developer en Globant</h3>
+				<p><strong>Mayo 2013 - Actualidad</strong> - Trabajo en el proyecto de LAN Airlines en un principio como dev y posteriormente pase un periodo como Tech Lead en el proyecto de rediseño del proceso de compra en Front-End, luego en equipos mixtos con proyectos variados para el sitio .com</p>
+                <p><strong>Agosto 2011 - Mayo 2013</strong> - Trabaje en el proyecto Southwest en el sector de UI de la plataforma Web, desde la implementacion de proyectos nuevos hasta el arreglo de bugs en UI.</p>
+            </article>
+            <article>
+                <span>Mayo 2010 - Julio 2011</span>
+                <h3>Desarrollo Web en WideGroup Interactive</h3>
+                <p>Trabaje sobre diferentes sitios Web, desde la creación, mantenimiento, cambios diarios del cliente, etc., sitios de EEUU, utilizando Drupal en su mayoría, varias aplicaciones básicas de Facebook para fanspage y otros script en PHP para problemas puntuales.</p>
+            </article>
+            <article>
+                <span>Febrero 2010 - Agosto 2010</span>
+                <h3>Desarrollo Web en Estrategia Zend</h3>
+                <p>Me dedique principalmente a la maquetación de sitios Web en PrestaShop (PNG de Firework a PrestaShop), eran sitios de origen español, además de algunas aplicaciones de Facebook.</p>
+            </article>
+            <article>
+                <span>2009-2009</span>
+                <h3>Desarrollo Web en Sistecorp</h3>
+                <p>Diferentes sitios Web, principalmente bajo Joomla y Scripts en Smarty.</p>
+            </article>
+            <article>
+                <span>2008-2009</span>
+                <h3>FreeLance</h3>
+                <p>Freelance en diferentes empresas, principalmente maquetando a WordPress desde xHTML ya cortados, luego Joomla y solucionando problemas sobre osCommerce.</p>
+            </article>
+            <article>
+                <span>2003-2007</span>
+                <h3>E-Commerce, negocio por internet</h3>
+                <p>Me dedique al comercio electrónico, utilizando plataformas online como mi sitio Web, mailing, MercadoLibre, DeRemate, etc., en lo relacionado desde allí aprendí HTML, PHP  y a desarrollar entendiendo el punto de vista del cliente.</p>
+            </article>
+        </section>
+
+        <section class="clearfix">
+            <h2>Mis datos de contacto</h2>
+            <ul>
+                <li><a class="perfil">Martín Darío Díaz</a></li>
+                <li><a class="telefono">+54 (0351) 476-6185</a></li>
+                <li><a class="celular">+54 (0351) 153-353812</a></li>
+                <li><a class="gmail" href="mailto:diaz.martin@gmail.com">diaz.martin@gmail.com</a></li>
+                <li><a class="twitter" href="http://twitter.com/#!/MartinDiaz">@MartinDiaz</a></li>
+                <li><a class="github" href="https://github.com/diazmartin">https://github.com/diazmartin</a></li>
+                <li><a class="facebook" href="http://www.facebook.com/martindario.diaz">fb.me/MartinDario.Diaz</a></li>
+                <li><a class="googleplus" href="https://plus.google.com/108371238046869413321">http://gplus.to/MartinDiaz</a></li>
+                <li><a class="linkedin" href="http://ar.linkedin.com/in/martindariodiaz">ar.linkedin.com/in/martindariodiaz</a></li>
+            </ul>
+        </section>
+
+        <footer>
+			<p>Mas vale hecho que perfecto</p>
+        </footer>
+
+    </body>
+</html>
